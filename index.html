@@ -9,13 +9,26 @@
 <body>
   <div class="container">
     <header>
-      <h1>zjc 的技术博客</h1>
+      <h1>zjc 的技术博客 <button id="theme-toggle" aria-label="切换主题">🌙</button></h1>
       <p>记录学习与思考</p>
     </header>
     <main>
-      <p>博客建设中...</p>
+      <ul class="post-list" id="post-list"></ul>
     </main>
     <footer>© 2026 zjc · 使用 HTML5 + CSS + JS 构建</footer>
   </div>
+  <script>
+    // 文章元数据，供 main.js 渲染列表
+    window.POSTS = [
+      {
+        title: 'Hello World：博客的第一篇文章',
+        url: 'posts/hello-world.html',
+        date: '2026-09-08',
+        tags: '随笔',
+        excerpt: '这是本博客的第一篇文章，聊聊为什么开始写博客，以及这个站点如何用纯 HTML/CSS/JS 搭起来。'
+      }
+    ];
+  </script>
+  <script src="js/main.js"></script>
 </body>
 </html>
